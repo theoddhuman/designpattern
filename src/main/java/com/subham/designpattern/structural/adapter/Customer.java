@@ -1,0 +1,14 @@
+package com.subham.designpattern.structural.adapter;
+
+/**
+ * @author subham.paul
+ *
+ * Target interface required by new client code
+ */
+public interface Customer {
+    String getName();
+
+    String getDesignation();
+
+    String getAddress();
+}
