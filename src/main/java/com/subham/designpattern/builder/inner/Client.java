@@ -1,44 +1,45 @@
-package com.cpc.dp.builder2;
+package com.subham.designpattern.builder.inner;
+
+import com.subham.designpattern.builder.outer.Address;
+import com.subham.designpattern.builder.outer.User;
 
 import java.time.LocalDate;
 
-import com.cpc.dp.builder.Address;
-import com.cpc.dp.builder.User;
-import com.cpc.dp.builder2.UserDTO.UserDTOBuilder;
-
+/**
+ * @author subham.paul
+ */
 public class Client {
+    public static void main(String[] args) {
+        UserDto userDto = directBuild(createUser());
+        System.out.println(userDto);
+    }
 
-	public static void main(String[] args) {
-		User user = createUser();
-		// Client has to provide director with concrete builder
-		UserDTO dto = directBuild(UserDTO.getBuilder(), user);
-		System.out.println(dto);
-	}
+    /**
+     * This method serves the role of director in builder pattern.
+     */
+    private static UserDto directBuild(User user) {
+        return UserDto.builder()
+                .firstName(user.getFirstName())
+                .lastName(user.getLastName())
+                .birthday(user.getBirthday())
+                .address(user.getAddress()).build();
+    }
 
-	/**
-	 * This method serves the role of director in builder pattern.
-	 */
-	private static UserDTO directBuild(UserDTOBuilder builder, User user) {
-		return builder.withFirstName(user.getFirstName()).withLastName(user.getLastName())
-				.withBirthday(user.getBirthday()).withAddress(user.getAddress()).build();
-	}
-
-	/**
-	 * Returns a sample user.
-	 */
-	public static User createUser() {
-		User user = new User();
-		user.setBirthday(LocalDate.of(1960, 5, 6));
-		user.setFirstName("Ron");
-		user.setLastName("Swanson");
-		Address address = new Address();
-		address.setHouseNumber("100");
-		address.setStreet("State Street");
-		address.setCity("Pawnee");
-		address.setState("Indiana");
-		address.setZipcode("47998");
-		user.setAddress(address);
-		return user;
-	}
-
+    /**
+     * Returns a sample user.
+     */
+    public static User createUser() {
+        User user = new User();
+        user.setBirthday(LocalDate.of(1960, 5, 6));
+        user.setFirstName("Ron");
+        user.setLastName("Swanson");
+        Address address = new Address();
+        address.setHouseNumber("100");
+        address.setStreet("State Street");
+        address.setCity("Pawnee");
+        address.setState("Indiana");
+        address.setZipcode("47998");
+        user.setAddress(address);
+        return user;
+    }
 }
