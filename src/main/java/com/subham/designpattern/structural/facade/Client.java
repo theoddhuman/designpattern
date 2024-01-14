@@ -4,6 +4,10 @@ import com.subham.designpattern.structural.facade.email.EmailFacade;
 
 /**
  * @author subham.paul
+ * 
+ * Client has to interact with large no of interfaces and classes in a subsystem to get the result.
+ * So client gets tightly coupled with those interfaces and classes. Facade provides a simple and 
+ * unified interface to a subsystem. Client interacts with just the facade to get same result.
  */
 public class Client {
     public static void main(String[] args) {

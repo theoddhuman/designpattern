@@ -2,6 +2,9 @@ package com.subham.designpattern.structural.composite;
 
 /**
  * @author subham.paul
+ * 
+ * We have a part-whole relationship or hierachy of objects and we want to be able to treat all
+ * objects in this hierarchy uniformly.
  */
 public class Client {
     public static void main(String[] args) {

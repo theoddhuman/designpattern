@@ -2,6 +2,14 @@ package com.subham.designpattern.structural.adapter;
 
 /**
  * @author subham.paul
+ * 
+ * We have an existing object which provides the functionality the client needs.
+ * But client code can't use this object because it expects an object with different interface.
+ * 
+ * Using adapter design pattern we make this existing object work with client by adpating the object
+ * to client's expected interface.
+ * 
+ * Two types of adapter - Class Adapter and Object Adapter
  */
 public class Client {
     public static void main(String[] args) {

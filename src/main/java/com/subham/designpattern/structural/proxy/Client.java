@@ -4,6 +4,10 @@ import java.awt.geom.Point2D;
 
 /**
  * @author subham.paul
+ * 
+ * We need to provide a palceholder or surrogate to anothe object.
+ * 
+ * Proxy acts on behalf of the object. We can create the original object on demand.
  */
 public class Client {
     public static void main(String[] args) {
