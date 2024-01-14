@@ -2,6 +2,11 @@ package com.subham.designpattern.behavioral.interpreter;
 
 /**
  * @author subham.paul
+ * 
+ * We use interpreter when we want to process a simple language with rules or grammar.
+ * 
+ * Interpreter allows us to represent the rules of language or grammar in a dtat structure and then
+ * interpret sentences in that language.
  */
 public class Client {
     public static void main(String[] args) {

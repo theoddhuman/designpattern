@@ -2,6 +2,9 @@ package com.subham.designpattern.behavioral.iterator;
 
 /**
  * @author subham.paul
+ * 
+ * Iterator allows a way to access elements of an aggregate object in sequence while hiding the
+ * actual internal data structure used.
  */
 public class Client {
     public static void main(String[] args) {

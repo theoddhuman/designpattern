@@ -2,6 +2,12 @@ package com.subham.designpattern.behavioral.command.syncinvoker;
 
 /**
  * @author subham.paul
+ * 
+ * We want to represent a request or a method call as an object. Information about parameters
+ * passed and actual operation is encapsualted in an object called command.
+ * 
+ * Advantage of command pattern is that, what would have been a method call is now an object which
+ * can be stored for later execution or sent to other parts of the code.
  */
 public class Client {
     public static void main(String[] args) {
