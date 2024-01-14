@@ -7,6 +7,8 @@ import java.time.LocalDate;
 
 /**
  * @author subham.paul
+ * 
+ * Builder class will be inner class of the class of the object to be created.
  */
 public class Client {
     public static void main(String[] args) {

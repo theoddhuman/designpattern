@@ -2,6 +2,12 @@ package com.subham.designpattern.creational.prototype;
 
 /**
  * @author subham.paul
+ * 
+ * We have a complex object that is costly to create. to create more instances of such class, we use an 
+ * existing instance a sour protoype.
+ * 
+ * Prototype will allow us to make copies of existing object and save us from having to create objects
+ * from scratch.
  */
 public class Client {
     public static void main(String[] args) throws CloneNotSupportedException {

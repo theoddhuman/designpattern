@@ -5,6 +5,11 @@ import com.subham.designpattern.creational.abstractfactory.gcp.GoogleResourceFac
 
 /**
  * @author subham.paul
+ * 
+ * Define an interface or abstract class for creating families of related (or dependent) 
+ * objects but without specifying their concrete sub-classes.
+ * 
+ * Isolates the client code from concrete classes.
  */
 public class Client {
     private ResourceFactory resourceFactory;

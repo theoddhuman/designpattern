@@ -4,6 +4,9 @@ import java.time.LocalDate;
 
 /**
  * @author subham.paul
+ * 
+ * If we have a complex process to constrcut an object involving multiple steps, then this pattern can help us.
+ * In builder we remove the logic related to object construction from client code and abstract it in separate class.
  */
 public class Client {
     public static void main(String[] args) {

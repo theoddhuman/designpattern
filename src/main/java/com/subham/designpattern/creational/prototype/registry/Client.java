@@ -6,6 +6,8 @@ import com.subham.designpattern.creational.prototype.UnitType;
 
 /**
  * @author subham.paul
+ * 
+ * We cna maintain a regsitry of prototypes based on the type of instances.
  */
 public class Client {
     public static void main(String[] args) throws CloneNotSupportedException {
