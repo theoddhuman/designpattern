@@ -4,6 +4,12 @@ import java.io.IOException;
 
 /**
  * @author subham.paul
+ * 
+ * Using this pattern we define an algorithm in a method as a sries of steps (method calls) and 
+ * provide a chance for subclasses to define or redefine some of these steps.
+ * 
+ * The pattern works by defining abstract methods which then ahve to be implemented by concrete
+ * subclasses. These methods are like hooks which are then called by template method.
  */
 public class Client {
     public static void main(String[] args) throws IOException {

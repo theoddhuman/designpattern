@@ -5,6 +5,17 @@ import java.util.Random;
 
 /**
  * @author subham.paul
+ * 
+ * This pattern allows us to define new operations that can vbe performed on an object without
+ * changing the class definition of the object.
+ * 
+ * Think of this pattern as an object (visitor) that visits all nodes in an object structure.
+ * Each time our visitor visits a particular object from the object structure, the object calls
+ * a specific mehtod on visitor, passing itself as an argument.
+ * 
+ * Each time we need a new operation we create a subclass of visitor, implement the operation in
+ * that class and visit object structure.
+ * 
  */
 public class Client {
     public static void main(String[] args) {

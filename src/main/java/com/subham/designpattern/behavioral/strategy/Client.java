@@ -4,6 +4,10 @@ import java.util.LinkedList;
 
 /**
  * @author subham.paul
+ * 
+ * Strategy pattern allows us to encapsulate an algorithm in a class. So now we can configure our
+ * context or main object with an object of this class, to change the algorithm used to perform 
+ * given operation.
  */
 public class Client {
     private static LinkedList<Order> orders = new LinkedList<>();

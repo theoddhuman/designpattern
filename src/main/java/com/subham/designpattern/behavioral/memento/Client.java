@@ -8,6 +8,13 @@ import java.util.LinkedList;
 
 /**
  * @author subham.paul
+ * 
+ * When we want to store object's state without exposing internal details about the state then
+ * we can use memento design pattern.
+ * 
+ * This pattern is often combined with Command design pattern to provide undo functionality in
+ * application.
+ * 
  */
 public class Client {
     public static void main(String[] args) {
