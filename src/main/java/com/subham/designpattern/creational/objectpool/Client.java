@@ -10,8 +10,11 @@ package com.subham.designpattern.creational.objectpool;
  * When code needs and object of this class we provide it from its cache.
  */
 public class Client {
-    public static final ObjectPool<BitMap> bitMapPool = new ObjectPool<>(()->new BitMap("Logo"), 10);
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        ObjectPool<BitMap> bitMapPool = ObjectPool.getInstance(10);
+        bitMapPool.load(()->new BitMap("Logo"));
+
+
         BitMap b1 = bitMapPool.get();
         b1.setLocation(new Point2D(10, 10));
         BitMap b2 = bitMapPool.get();
