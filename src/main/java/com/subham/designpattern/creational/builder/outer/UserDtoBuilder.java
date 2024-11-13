@@ -15,7 +15,5 @@ public interface UserDtoBuilder {//methods to build "parts" of product at a time
     UserDtoBuilder withAddress(Address address);
     //method to "assemble" final product
     UserDto build();
-    //(optional) method to fetch already built object
-    UserDto getUserDto();
 
 }

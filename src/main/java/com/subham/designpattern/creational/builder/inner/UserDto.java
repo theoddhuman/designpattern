@@ -90,9 +90,5 @@ public class UserDto {
             return this.userDto;
         }
 
-        public UserDto getUserDTO() {
-            return this.userDto;
-        }
-
     }
 }

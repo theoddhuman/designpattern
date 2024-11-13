@@ -45,9 +45,4 @@ public class UserWebDtoBuilder implements UserDtoBuilder{
         dto = new UserWebDto(firstName + " " + lastName, address, age);
         return dto;
     }
-
-    @Override
-    public UserDto getUserDto() {
-        return dto;
-    }
 }
