@@ -21,7 +21,7 @@ public class Client {
     }
 
     public static void printMessage(MessageCreator creator) {
-        Message msg = creator.getMessage();
+        Message msg = creator.createMessage();
         System.out.println(msg.getContent());
     }
 }

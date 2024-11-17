@@ -8,7 +8,7 @@ import com.subham.designpattern.creational.factorymethod.message.TextMessage;
  */
 public class TextMessageCreator extends MessageCreator {
     @Override
-    protected Message createMessage() {
+    public Message createMessage() {
         return new TextMessage();
     }
 }

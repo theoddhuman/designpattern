@@ -8,7 +8,7 @@ import com.subham.designpattern.creational.factorymethod.message.Message;
  */
 public class JsonMessageCreator extends MessageCreator {
     @Override
-    protected Message createMessage() {
+    public Message createMessage() {
         return new JsonMessage();
     }
 }
