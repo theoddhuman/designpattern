@@ -14,7 +14,7 @@ public class Client {
         Message message = new TextMessage("This is super message");
         System.out.println(message.getContent());
 
-        EncodedDecorator decorator = new Base64EncodedDecorator(message);
+        Message decorator = new Base64EncodedDecorator(message);
         System.out.println(decorator.getContent());
     }
 }

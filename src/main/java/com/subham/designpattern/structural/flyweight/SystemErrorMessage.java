@@ -7,9 +7,11 @@ package com.subham.designpattern.structural.flyweight;
  */
 public class SystemErrorMessage implements ErrorMessage {
     //some error message $errorCode
+    //intrinsic state
     private String messageTemplate;
 
     //http://somedomain.com/help?error=
+    //intrinsic state
     private String helpUrlBase;
 
     public SystemErrorMessage(String messageTemplate, String helpUrlBase) {

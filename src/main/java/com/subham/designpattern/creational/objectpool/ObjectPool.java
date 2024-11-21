@@ -17,7 +17,7 @@ public class ObjectPool<T extends Poolable> {
     private BlockingQueue<T> availablePool;
     int count;
 
-    public ObjectPool(int count) {
+    private ObjectPool(int count) {
         availablePool = new ArrayBlockingQueue<>(count);
         this.count = count;
     }
