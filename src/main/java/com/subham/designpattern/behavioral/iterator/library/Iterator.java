@@ -1,4 +1,4 @@
-package com.subham.designpattern.behavioral.iterator;
+package com.subham.designpattern.behavioral.iterator.library;
 
 /**
  * @author subham.paul
