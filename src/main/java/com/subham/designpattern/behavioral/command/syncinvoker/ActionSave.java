@@ -5,7 +5,7 @@ package com.subham.designpattern.behavioral.command.syncinvoker;
  *
  * Concrete command
  */
-public class ActionSave implements ActionListenerCommand {
+public class ActionSave implements ActionCommand {
     private String docName;
 
     private Document document;

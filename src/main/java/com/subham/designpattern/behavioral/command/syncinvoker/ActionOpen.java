@@ -5,7 +5,7 @@ package com.subham.designpattern.behavioral.command.syncinvoker;
  *
  * Concerete command
  */
-public class ActionOpen implements ActionListenerCommand {
+public class ActionOpen implements ActionCommand {
     private Document document;
 
     private String docName;

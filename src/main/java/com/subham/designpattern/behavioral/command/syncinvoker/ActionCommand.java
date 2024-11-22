@@ -5,6 +5,6 @@ package com.subham.designpattern.behavioral.command.syncinvoker;
  *
  * interface implemented by all concrete command classes
  */
-public interface ActionListenerCommand {
+public interface ActionCommand {
     void execute();
 }

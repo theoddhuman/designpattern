@@ -5,6 +5,8 @@ import java.util.LinkedList;
 
 /**
  * @author subham.paul
+ *
+ * State
  */
 public class Workflow {
     private LinkedList<String> steps;

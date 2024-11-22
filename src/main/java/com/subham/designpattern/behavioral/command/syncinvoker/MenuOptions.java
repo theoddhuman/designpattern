@@ -6,11 +6,11 @@ package com.subham.designpattern.behavioral.command.syncinvoker;
  * Invoker class
  */
 public class MenuOptions {
-    private ActionListenerCommand actionOpen;
+    private ActionCommand actionOpen;
 
-    private ActionListenerCommand actionSave;
+    private ActionCommand actionSave;
 
-    public MenuOptions(ActionListenerCommand actionOpen, ActionListenerCommand actionSave) {
+    public MenuOptions(ActionCommand actionOpen, ActionCommand actionSave) {
         this.actionOpen = actionOpen;
         this.actionSave = actionSave;
     }
