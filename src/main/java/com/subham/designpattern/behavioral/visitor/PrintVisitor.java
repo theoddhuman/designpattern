@@ -1,14 +1,16 @@
 package com.subham.designpattern.behavioral.visitor;
 
+import java.util.Map;
+
 /**
  * @author subham.paul
  */
 public class PrintVisitor implements Visitor {
-    private AppraisalVisitor.Ratings ratings;
+    private Map<Integer, PerformanceRating> ratings;
 
     public PrintVisitor() {}
 
-    public PrintVisitor(AppraisalVisitor.Ratings ratings) {
+    public PrintVisitor(Map<Integer, PerformanceRating> ratings) {
         this.ratings = ratings;
     }
 
@@ -44,7 +46,7 @@ public class PrintVisitor implements Visitor {
     private String getRatings(Employee emp) {
         if(ratings !=null) {
             return "\n\tRatings: Personal="+emp.getPerformanceRating()
-                    +"  Final="+ratings.getFinalRating(emp.getEmployeeId());
+                    +"  Final="+ratings.get(emp.getEmployeeId());
         } else {
             return "";
         }

@@ -1,19 +1,14 @@
 package com.subham.designpattern.behavioral.visitor;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author subham.paul
  */
 public class AppraisalVisitor implements Visitor {
-    private Ratings ratings = new Ratings();
+    private Map<Integer, PerformanceRating> ratings = new HashMap<>();
 
-    @SuppressWarnings("serial")
-    public class Ratings extends HashMap<Integer, PerformanceRating> {
-        public int getFinalRating(int empId) {
-            return get(empId).getFinalRating();
-        }
-    }
 
     @Override
     public void visit(Programmer programmer) {
@@ -71,7 +66,7 @@ public class AppraisalVisitor implements Visitor {
         return (int)Math.round(emp.getDirectReports().stream().mapToDouble(e->e.getPerformanceRating()).average().getAsDouble());
     }
 
-    public Ratings getFinalRatings() {
+    public Map<Integer, PerformanceRating> getFinalRatings() {
         return ratings;
     }
 }

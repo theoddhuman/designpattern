@@ -40,4 +40,14 @@ public class PerformanceRating {
     public void setFinalRating(int finalRating) {
         this.finalRating = finalRating;
     }
+
+    @Override
+    public String toString() {
+        return "PerformanceRating{" +
+                "id=" + id +
+                ", personalRating=" + personalRating +
+                ", teamAverageRating=" + teamAverageRating +
+                ", finalRating=" + finalRating +
+                '}';
+    }
 }
