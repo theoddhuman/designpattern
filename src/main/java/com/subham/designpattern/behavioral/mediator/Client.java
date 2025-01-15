@@ -16,6 +16,7 @@ public class Client {
         Colleague subham = new ColleagueImpl(meetingRoom, "Subham");
         Colleague tarun = new ColleagueImpl(meetingRoom, "Tarun");
         Colleague srajan = new ColleagueImpl(meetingRoom, "Srajan");
+        Colleague aashish = new ColleagueImpl(meetingRoom, "Aashish");
         subham.speak("Hi!");
         tarun.speak("How are you?");
     }
