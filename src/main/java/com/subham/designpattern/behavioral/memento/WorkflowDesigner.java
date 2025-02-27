@@ -44,7 +44,8 @@ public class WorkflowDesigner {
     /**
      * Memento class
      */
-    public class Memento {private String[] steps;
+    public class Memento {
+        private String[] steps;
 
         private String name;
 

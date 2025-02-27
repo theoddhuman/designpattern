@@ -1,5 +1,7 @@
 package com.subham.designpattern.behavioral.visitor;
 
+import com.subham.designpattern.behavioral.visitor.objects.*;
+
 public class OrgStructure {
     public static Employee buildOrganization() {
 

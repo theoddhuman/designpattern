@@ -1,4 +1,7 @@
-package com.subham.designpattern.behavioral.visitor;
+package com.subham.designpattern.behavioral.visitor.visitors;
+
+import com.subham.designpattern.behavioral.visitor.*;
+import com.subham.designpattern.behavioral.visitor.objects.*;
 
 import java.util.HashMap;
 import java.util.Map;

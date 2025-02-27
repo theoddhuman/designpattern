@@ -1,4 +1,6 @@
-package com.subham.designpattern.behavioral.visitor;
+package com.subham.designpattern.behavioral.visitor.objects;
+
+import com.subham.designpattern.behavioral.visitor.visitors.Visitor;
 
 import java.util.Collection;
 

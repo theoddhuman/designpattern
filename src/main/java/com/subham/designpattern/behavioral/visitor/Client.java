@@ -1,5 +1,10 @@
 package com.subham.designpattern.behavioral.visitor;
 
+import com.subham.designpattern.behavioral.visitor.objects.Employee;
+import com.subham.designpattern.behavioral.visitor.visitors.AppraisalVisitor;
+import com.subham.designpattern.behavioral.visitor.visitors.PrintVisitor;
+import com.subham.designpattern.behavioral.visitor.visitors.Visitor;
+
 import java.util.Date;
 import java.util.Random;
 
